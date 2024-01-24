@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp4.Bekeres"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Bekeres" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+
+        <StackPanel>
+            <TextBox x:Name="txtOm" Margin="10px" VerticalContentAlignment="Center" Height="30px" Width="200px"></TextBox>
+            <TextBox x:Name="txtNev" Margin="10px" VerticalContentAlignment="Center" Height="30px" Width="200px"></TextBox>
+            <TextBox x:Name="txtEmail" Margin="10px" VerticalContentAlignment="Center" Height="30px" Width="200px"></TextBox>
+            <DatePicker x:Name="txtDatum" Margin="10px" VerticalContentAlignment="Center" Height="30px" Width="200px"></DatePicker>
+            <TextBox x:Name="txtCim" Margin="10px" VerticalContentAlignment="Center" Height="30px" Width="200px"></TextBox>
+            <TextBox x:Name="txtMatek" Margin="10px" VerticalContentAlignment="Center" Height="30px" Width="200px"></TextBox>
+            <TextBox x:Name="txtMagyar" Margin="10px" VerticalContentAlignment="Center" Height="30px" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel>
+            <Label Margin="10px" Width="250px" HorizontalAlignment="Left" Height="30px">OM azonsoító</Label>
+            <Label Margin="10px" Width="250px" HorizontalAlignment="Left" Height="30px">Név</Label>
+            <Label Margin="10px" Width="250px" HorizontalAlignment="Left" Height="30px">Email</Label>
+            <Label Margin="10px" Width="250px" HorizontalAlignment="Left" Height="30px">Születési dátum</Label>
+            <Label Margin="10px" Width="250px" HorizontalAlignment="Left" Height="30px">Értesítési cím</Label>
+            <Label Margin="10px" Width="250px" HorizontalAlignment="Left" Height="30px">Matek eredmény</Label>
+            <Label Margin="10px" Width="250px" HorizontalAlignment="Left" Height="30px">Magyar eredmény</Label>
+        </StackPanel>
+        <Label Margin="50px" Width="100px" HorizontalAlignment="Right" Height="30px">Felvételizett</Label>
+        <CheckBox Unchecked="felvetelizett_UnChecked" Checked="felvetelizett_Checked" x:Name="felvetelizett" IsChecked="True" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="30px" Height="30px" Margin="10px"></CheckBox>
+        <Button VerticalAlignment="Bottom" Click="txtMagyar_LostFocus" FontSize="30" Content="➔" Margin="10" x:Name="btnRogzit" Width="50" Height="50"></Button>
+
+
+
+    </Grid>
+</Window>
